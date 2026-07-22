@@ -51,7 +51,7 @@ namespace InvoicePrinter
                     case ".jpeg":
                     case ".png":
                     case ".bmp":
-                        Stream stream = File.OpenRead("image.jpg");
+                        Stream stream = File.OpenRead(path);
                         Image image = Image.FromStream(stream);
                         invoiceList[path] = image;
                         break;
