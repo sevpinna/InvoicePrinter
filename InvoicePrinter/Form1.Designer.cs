@@ -32,6 +32,7 @@
             this.loadInvoice = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.exportInvoice = new System.Windows.Forms.Button();
+            this.saveWord = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -63,9 +64,19 @@
             this.exportInvoice.Name = "exportInvoice";
             this.exportInvoice.Size = new System.Drawing.Size(147, 53);
             this.exportInvoice.TabIndex = 2;
-            this.exportInvoice.Text = "导出发票";
+            this.exportInvoice.Text = "预览并打印";
             this.exportInvoice.UseVisualStyleBackColor = true;
             this.exportInvoice.Click += new System.EventHandler(this.exportInvoice_Click);
+            // 
+            // saveWord
+            // 
+            this.saveWord.Location = new System.Drawing.Point(350, 181);
+            this.saveWord.Name = "saveWord";
+            this.saveWord.Size = new System.Drawing.Size(147, 53);
+            this.saveWord.TabIndex = 5;
+            this.saveWord.Text = "保存为 Word";
+            this.saveWord.UseVisualStyleBackColor = true;
+            this.saveWord.Click += new System.EventHandler(this.saveWord_Click);
             // 
             // numericUpDown1
             // 
@@ -96,12 +107,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.exportInvoice);
+            this.Controls.Add(this.saveWord);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.loadInvoice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "发票转换";
+            this.Text = "发票打印";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -113,6 +125,7 @@
         private System.Windows.Forms.Button loadInvoice;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button exportInvoice;
+        private System.Windows.Forms.Button saveWord;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label1;
     }
