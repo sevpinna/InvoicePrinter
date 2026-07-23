@@ -168,6 +168,7 @@ namespace InvoicePrinter
                     printDlg.Document = pd;
                     if (printDlg.ShowDialog(previewForm) == DialogResult.OK)
                     {
+                        index = 0; // 重置索引，重新渲染页面
                         pd.Print();
                     }
                 }
